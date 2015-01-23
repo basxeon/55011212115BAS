@@ -1,6 +1,6 @@
 class User {
     
-    //free สไตล์ 
+    //free สไตล์
 
 var pass:[String:Int]=["bas":12548,"sick":7785,"tom":5748,"dragon":11111]
 
