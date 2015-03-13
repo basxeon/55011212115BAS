@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDA769B81A84CF71002A272D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA769B71A84CF71002A272D /* AppDelegate.swift */; };
+		FDA769BA1A84CF71002A272D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA769B91A84CF71002A272D /* ViewController.swift */; };
+		FDA769BD1A84CF71002A272D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA769BB1A84CF71002A272D /* Main.storyboard */; };
+		FDA769BF1A84CF71002A272D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA769BE1A84CF71002A272D /* Images.xcassets */; };
+		FDA769C21A84CF71002A272D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDA769C01A84CF71002A272D /* LaunchScreen.xib */; };
+		FDA769CE1A84CF71002A272D /* QiuzNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA769CD1A84CF71002A272D /* QiuzNumberTests.swift */; };
+		FDA769DB1A84D3D2002A272D /* Number-1-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA769D71A84D3D2002A272D /* Number-1-icon.png */; };
+		FDA769DC1A84D3D2002A272D /* Number-2-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA769D81A84D3D2002A272D /* Number-2-icon.png */; };
+		FDA769DD1A84D3D2002A272D /* Number-3-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA769D91A84D3D2002A272D /* Number-3-icon.png */; };
+		FDA769DE1A84D3D2002A272D /* reset-button-blue-md.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA769DA1A84D3D2002A272D /* reset-button-blue-md.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDA769C81A84CF71002A272D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDA769AA1A84CF71002A272D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDA769B11A84CF71002A272D;
+			remoteInfo = QiuzNumber;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDA769B21A84CF71002A272D /* QiuzNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiuzNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA769B61A84CF71002A272D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA769B71A84CF71002A272D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDA769B91A84CF71002A272D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDA769BC1A84CF71002A272D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDA769BE1A84CF71002A272D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FDA769C11A84CF71002A272D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FDA769C71A84CF71002A272D /* QiuzNumberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QiuzNumberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA769CC1A84CF71002A272D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA769CD1A84CF71002A272D /* QiuzNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiuzNumberTests.swift; sourceTree = "<group>"; };
+		FDA769D71A84D3D2002A272D /* Number-1-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Number-1-icon.png"; sourceTree = SOURCE_ROOT; };
+		FDA769D81A84D3D2002A272D /* Number-2-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Number-2-icon.png"; sourceTree = SOURCE_ROOT; };
+		FDA769D91A84D3D2002A272D /* Number-3-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Number-3-icon.png"; sourceTree = SOURCE_ROOT; };
+		FDA769DA1A84D3D2002A272D /* reset-button-blue-md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reset-button-blue-md.png"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDA769AF1A84CF71002A272D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA769C41A84CF71002A272D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDA769A91A84CF71002A272D = {
+			isa = PBXGroup;
+			children = (
+				FDA769B41A84CF71002A272D /* QiuzNumber */,
+				FDA769CA1A84CF71002A272D /* QiuzNumberTests */,
+				FDA769B31A84CF71002A272D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDA769B31A84CF71002A272D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDA769B21A84CF71002A272D /* QiuzNumber.app */,
+				FDA769C71A84CF71002A272D /* QiuzNumberTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDA769B41A84CF71002A272D /* QiuzNumber */ = {
+			isa = PBXGroup;
+			children = (
+				FDA769B71A84CF71002A272D /* AppDelegate.swift */,
+				FDA769B91A84CF71002A272D /* ViewController.swift */,
+				FDA769BB1A84CF71002A272D /* Main.storyboard */,
+				FDA769BE1A84CF71002A272D /* Images.xcassets */,
+				FDA769C01A84CF71002A272D /* LaunchScreen.xib */,
+				FDA769B51A84CF71002A272D /* Supporting Files */,
+			);
+			path = QiuzNumber;
+			sourceTree = "<group>";
+		};
+		FDA769B51A84CF71002A272D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDA769D71A84D3D2002A272D /* Number-1-icon.png */,
+				FDA769D81A84D3D2002A272D /* Number-2-icon.png */,
+				FDA769D91A84D3D2002A272D /* Number-3-icon.png */,
+				FDA769DA1A84D3D2002A272D /* reset-button-blue-md.png */,
+				FDA769B61A84CF71002A272D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDA769CA1A84CF71002A272D /* QiuzNumberTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDA769CD1A84CF71002A272D /* QiuzNumberTests.swift */,
+				FDA769CB1A84CF71002A272D /* Supporting Files */,
+			);
+			path = QiuzNumberTests;
+			sourceTree = "<group>";
+		};
+		FDA769CB1A84CF71002A272D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDA769CC1A84CF71002A272D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDA769B11A84CF71002A272D /* QiuzNumber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA769D11A84CF71002A272D /* Build configuration list for PBXNativeTarget "QiuzNumber" */;
+			buildPhases = (
+				FDA769AE1A84CF71002A272D /* Sources */,
+				FDA769AF1A84CF71002A272D /* Frameworks */,
+				FDA769B01A84CF71002A272D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QiuzNumber;
+			productName = QiuzNumber;
+			productReference = FDA769B21A84CF71002A272D /* QiuzNumber.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDA769C61A84CF71002A272D /* QiuzNumberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA769D41A84CF71002A272D /* Build configuration list for PBXNativeTarget "QiuzNumberTests" */;
+			buildPhases = (
+				FDA769C31A84CF71002A272D /* Sources */,
+				FDA769C41A84CF71002A272D /* Frameworks */,
+				FDA769C51A84CF71002A272D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDA769C91A84CF71002A272D /* PBXTargetDependency */,
+			);
+			name = QiuzNumberTests;
+			productName = QiuzNumberTests;
+			productReference = FDA769C71A84CF71002A272D /* QiuzNumberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDA769AA1A84CF71002A272D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = iStudents;
+				TargetAttributes = {
+					FDA769B11A84CF71002A272D = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					FDA769C61A84CF71002A272D = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = FDA769B11A84CF71002A272D;
+					};
+				};
+			};
+			buildConfigurationList = FDA769AD1A84CF71002A272D /* Build configuration list for PBXProject "QiuzNumber" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDA769A91A84CF71002A272D;
+			productRefGroup = FDA769B31A84CF71002A272D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDA769B11A84CF71002A272D /* QiuzNumber */,
+				FDA769C61A84CF71002A272D /* QiuzNumberTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDA769B01A84CF71002A272D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA769DC1A84D3D2002A272D /* Number-2-icon.png in Resources */,
+				FDA769BD1A84CF71002A272D /* Main.storyboard in Resources */,
+				FDA769DE1A84D3D2002A272D /* reset-button-blue-md.png in Resources */,
+				FDA769DB1A84D3D2002A272D /* Number-1-icon.png in Resources */,
+				FDA769C21A84CF71002A272D /* LaunchScreen.xib in Resources */,
+				FDA769BF1A84CF71002A272D /* Images.xcassets in Resources */,
+				FDA769DD1A84D3D2002A272D /* Number-3-icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA769C51A84CF71002A272D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDA769AE1A84CF71002A272D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA769BA1A84CF71002A272D /* ViewController.swift in Sources */,
+				FDA769B81A84CF71002A272D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA769C31A84CF71002A272D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA769CE1A84CF71002A272D /* QiuzNumberTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDA769C91A84CF71002A272D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDA769B11A84CF71002A272D /* QiuzNumber */;
+			targetProxy = FDA769C81A84CF71002A272D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDA769BB1A84CF71002A272D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDA769BC1A84CF71002A272D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDA769C01A84CF71002A272D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDA769C11A84CF71002A272D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDA769CF1A84CF71002A272D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDA769D01A84CF71002A272D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDA769D21A84CF71002A272D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QiuzNumber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FDA769D31A84CF71002A272D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QiuzNumber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FDA769D51A84CF71002A272D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QiuzNumberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QiuzNumber.app/QiuzNumber";
+			};
+			name = Debug;
+		};
+		FDA769D61A84CF71002A272D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QiuzNumberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QiuzNumber.app/QiuzNumber";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDA769AD1A84CF71002A272D /* Build configuration list for PBXProject "QiuzNumber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA769CF1A84CF71002A272D /* Debug */,
+				FDA769D01A84CF71002A272D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDA769D11A84CF71002A272D /* Build configuration list for PBXNativeTarget "QiuzNumber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA769D21A84CF71002A272D /* Debug */,
+				FDA769D31A84CF71002A272D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FDA769D41A84CF71002A272D /* Build configuration list for PBXNativeTarget "QiuzNumberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA769D51A84CF71002A272D /* Debug */,
+				FDA769D61A84CF71002A272D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDA769AA1A84CF71002A272D /* Project object */;
+}
