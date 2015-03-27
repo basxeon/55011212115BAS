@@ -48,11 +48,11 @@ class ViewController: UIViewController {
             // randomly assign a delay of 0.9 to 1s
             let delay = NSTimeInterval(900 + arc4random_uniform(100)) / 1000
             
-            // set up some constants for the fish
+            // set up some constants for the arrow
             let size : CGFloat = CGFloat( arc4random_uniform(40))+20
             let yPosition : CGFloat = CGFloat( arc4random_uniform(200))+20
             
-            // create the fish
+            // create the arrow
             let fish = UIImageView()
             fish.image = UIImage(named: "arrow1")
             fish.frame = CGRectMake(0-size, yPosition, size, size)
