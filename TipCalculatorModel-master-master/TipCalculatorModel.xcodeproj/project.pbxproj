@@ -15,6 +15,7 @@
 		FD880C661A8495F000E80A7D /* TipCalculatorModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD880C651A8495F000E80A7D /* TipCalculatorModelTests.swift */; };
 		FD880C701A84A80800E80A7D /* TipCalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD880C6F1A84A80800E80A7D /* TipCalculatorModel.swift */; };
 		FD880CB41A84CB5500E80A7D /* dota2-rekindling-soul.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD880CB31A84CB5500E80A7D /* dota2-rekindling-soul.jpg */; };
+		FDA09F411AB95B000092BE45 /* kuba_icon_ok.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA09F401AB95B000092BE45 /* kuba_icon_ok.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		FD880C651A8495F000E80A7D /* TipCalculatorModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorModelTests.swift; sourceTree = "<group>"; };
 		FD880C6F1A84A80800E80A7D /* TipCalculatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipCalculatorModel.swift; sourceTree = "<group>"; };
 		FD880CB31A84CB5500E80A7D /* dota2-rekindling-soul.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dota2-rekindling-soul.jpg"; sourceTree = SOURCE_ROOT; };
+		FDA09F401AB95B000092BE45 /* kuba_icon_ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kuba_icon_ok.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		FD880C4D1A8495F000E80A7D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FDA09F401AB95B000092BE45 /* kuba_icon_ok.png */,
 				FD880CB31A84CB5500E80A7D /* dota2-rekindling-soul.jpg */,
 				FD880C4E1A8495F000E80A7D /* Info.plist */,
 			);
@@ -201,6 +204,7 @@
 				FD880C551A8495F000E80A7D /* Main.storyboard in Resources */,
 				FD880C5A1A8495F000E80A7D /* LaunchScreen.xib in Resources */,
 				FD880CB41A84CB5500E80A7D /* dota2-rekindling-soul.jpg in Resources */,
+				FDA09F411AB95B000092BE45 /* kuba_icon_ok.png in Resources */,
 				FD880C571A8495F000E80A7D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +417,7 @@
 				FD880C6B1A8495F000E80A7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD880C6C1A8495F000E80A7D /* Build configuration list for PBXNativeTarget "TipCalculatorModelTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				FD880C6E1A8495F000E80A7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
