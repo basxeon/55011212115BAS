@@ -8,27 +8,34 @@
 
 import UIKit
 import AssetsLibrary
+import MobileCoreServices
 
 class ViewController: UIViewController ,UINavigationControllerDelegate,UIImagePickerControllerDelegate{
     
-        @IBOutlet weak var amountSlider: UISlider!
+    
+    var imagePicker: UIImagePickerController!
+    var newMedia: Bool?
+    
+    
+       @IBOutlet weak var amountSlider: UISlider!
        @IBAction func loadPhotos(sender: AnyObject) {
         
-        let pickerC = UIImagePickerController()
-        pickerC.delegate = self
-         self.presentViewController(pickerC, animated: true, completion: nil)
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .Camera
+        imagePicker.mediaTypes = [kUTTypeImage as NSString]
+        presentViewController(imagePicker, animated: true, completion: nil)
+        
+        newMedia = true
     }
     
     
     @IBAction func savephotos(sender: AnyObject) {
-        let imageToSave = filter.outputImage
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .PhotoLibrary
+        imagePicker.mediaTypes = [kUTTypeImage as NSString]
+        presentViewController(imagePicker, animated: true, completion: nil)
         
-        let softwareContext = CIContext(options: [kCIContextUseSoftwareRenderer: true])
-        let cgimg = softwareContext.createCGImage(imageToSave, fromRect: imageToSave.extent())
-        let library = ALAssetsLibrary()
-        
-        library.writeImageToSavedPhotosAlbum(cgimg, metadata: imageToSave.properties(), completionBlock: nil)
-        
+        newMedia = false
         
         
     }
@@ -48,15 +55,30 @@ class ViewController: UIViewController ,UINavigationControllerDelegate,UIImagePi
         
     
     }
+    
+    func image(image: UIImage, didFinishSavingWithError error: NSErrorPointer, contextInfo: UnsafePointer<Void>) {
+        if (error != nil) {
+            let alert = UIAlertController(title: "Save Failed", message: "Failed to save image", preferredStyle: UIAlertControllerStyle.Alert)
+            let cancelAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+            
+            alert.addAction(cancelAction)
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+
  
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let fileURL = NSBundle.mainBundle().URLForResource("image", withExtension: "png")
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
         
-        beginImage = CIImage(contentsOfURL: fileURL)
+        
+        //let fileURL = NSBundle.mainBundle().URLForResource("image", withExtension: "png")
+        
+        //beginImage = CIImage(contentsOfURL: fileURL)
         
         filter = CIFilter(name: "CISepiaTone")
         filter.setValue(beginImage, forKey: kCIInputImageKey)
@@ -64,14 +86,29 @@ class ViewController: UIViewController ,UINavigationControllerDelegate,UIImagePi
         let outputImage = filter.outputImage
         
         context = CIContext(options: nil)
-        let cgimg = context.createCGImage(outputImage, fromRect: outputImage.extent())
+        //let cgimg = context.createCGImage(outputImage, fromRect: outputImage.extent())
         
-        let newImage = UIImage(CGImage: cgimg)
-        self.UIImageCiew.image = newImage
+        //let newImage = UIImage(CGImage: cgimg)
+        //self.UIImageCiew.image = newImage
         
-        self.logAllFilters()
+        //self.logAllFilters()
         
     }
+//    
+//    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+//        dismissViewControllerAnimated(true, completion: nil)
+//        
+//        let mediaType = info[UIImagePickerControllerMediaType] as NSString
+//        if (mediaType.isEqualToString(kUTTypeImage as NSString)) {
+//            let image = info[UIImagePickerControllerOriginalImage] as UIImage
+//            UIImageCiew.image = image
+//            
+//            if (newMedia == true) {
+//                UIImageWriteToSavedPhotosAlbum(image, self, "image: didFinishSavingWithError: contextInfo:", nil)
+//            }
+//        }
+//    }
+
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: NSDictionary!) {
         
